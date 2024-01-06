@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>EngineHackThief3</Title>
+		<Authors>Onofriychuk Yaroslav</Authors>
+		<PackageId>EngineHackThief3</PackageId>
+		<Version>1.0.4</Version>
+		<OutputPath>../Packages</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="./runtimes/win-x64/native/EngineCoreCpp.dll">
+			<Pack>true</Pack>
+			<PackagePath>./runtimes/win-x64/native/</PackagePath>
+		</Content>
+		<Content Include="./runtimes/win-x86/native/EngineCoreCpp.dll">
+			<Pack>true</Pack>
+			<PackagePath>./runtimes/win-x86/native/</PackagePath>
+		</Content>
+	</ItemGroup>
+
+</Project>
